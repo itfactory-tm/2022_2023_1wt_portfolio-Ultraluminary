@@ -275,3 +275,34 @@ footer {
 }
 .leiders:hover {
     background-color: #efead5;}
+
+/* .hoofdpagina {
+tekst centreren (hoofdpagina logo centreren)
+display: flex;
+height: 100vh;
+justify-content: center;
+align-items: center;
+background-image: url("Afbeeldingen/Hoofdpagina.png");
+}*/
+
+/* .hoofdpagina img {
+height: 50VH;
+}
+navigatiebalk zie flexbox examples
+nax ul li {
+border -bottom 1px solid
+flex 1 1 100%}
+nav ul li:hover {
+blabla
+}
+
+active class laat zien welke pagina momenteel actief is (mss te doen in een aparte kleur.)
+om een navigatie laten te verschuiven naar boven, zodat hij niet in je beeld constant is.
+top: -54px;
+
+in de hover transform: translateU(54px); transition: 0.5s;
+ease-in laat je menu trager zakker en dan ineens sneller naar beneden gaan.
+
+om je navigatie
+
+ */
