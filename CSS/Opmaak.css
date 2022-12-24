@@ -3,41 +3,135 @@
 
 html{
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.618;
+}
+
+nav {
+    background-color: #997e25;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0.5px 0.5px 8px #efead5;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+}
+nav li {
+    display: flex;
+    /*background-color: #efead5;*/
+    /*border-bottom: 1px solid #c03d1e;*/
+    font-family: 'Cinzel Decorative', cursive;
+    list-style-type: none;
+}
+nav a {
+    flex: 1 1 auto;
+    line-height: 2;
+    text-decoration: underline;
+    /*color: #997e25;*/
+    font-weight: bold;
+    background-color: #997e25;
+    color: #efead5;
+}
+nav a:hover {
+    background-color: #efead5;
+    color: #997e25;
+    text-decoration: none;
+}
+nav a i {
+    margin: 0 .5rem;
+}
+nav li.spacer {
+    display: none;
 }
 
 body{
     background-color: #304455;
 }
+
 h1{
     font-family: 'Parisienne', cursive;
     font-size: 2rem;
-    color: #9a7f25;
-
+    color: #efead5;
+    background-image: linear-gradient(180deg,  #997e25, #304354);
 }
+h2{
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: #efead5;
+    text-shadow: 4px 4px 8px rgb(239, 234, 213);
+    border-bottom: solid 1px rgba(239, 234, 213, 0.3);
+    /*border-top: solid 1px rgba(239, 234, 213, 0.3);*/
+}
+h3{
+    font-family: 'Cinzel Decorative', cursive;
+    color: #9a7f25;
+}
+
+p{
+    font-family: 'Parisienne', cursive;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.618rem;
+    color: #efead5;
+    padding: 0 1.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: .7rem;
+    text-align: right;
+    color: #efead5;
+    background-color: #9a7f25;
+    border-top: 1px solid #997e25;
+    padding-top: 0.1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: 200;
+    box-shadow: 0.5px 0.5px 8px #efead5;
+}
+#links{
+    text-align: left;
+}
+#rechts{
+    text-align: right;
+}
+a{
+    color: #efead5;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+    color: #efead5;
+}
+
 .hoofd {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 3rem;
-    color: #9a7f25;
-    text-shadow: 4px 4px 8px rgba(239, 234, 213, 1);
+    text-shadow: 4px 4px 8px rgb(239, 234, 213);
     text-align: center;
 }
 .start{
     font-family: 'Cinzel Decorative', cursive;
     font-size: 3rem;
-    color: #9a7f25;
-    text-shadow: 4px 4px 8px rgba(239, 234, 213, 1);
+    color: #efead5;
+    text-shadow: 4px 4px 8px rgb(153, 126, 37);
     position: absolute;
     top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
  }
-h3{
-    font-family: 'Cinzel Decorative', cursive;
-    color: #9a7f25;
-}
-#hoofdpagina{
+#start{
+    object-fit: cover;
     position: fixed;
     display: block;
     top: 0;
@@ -46,58 +140,35 @@ h3{
     height: 100%;
     z-index: -1;
 }
-h2{
-    font-family: 'Parisienne', cursive;
-    font-size: 2rem;
-    color: #9a7f25;
-    text-shadow: 4px 4px 8px rgba(239, 234, 213, 0.3);
-    border-bottom: solid 1px rgba(239, 234, 213, 0.3);
-    border-top: solid 1px rgba(239, 234, 213, 0.3);
+.start img{
+    background-image: url("../Afbeeldingen/Hoofdpagina.png");
+    height: 50vh;
 }
-body{
-    /*background-image: url("Afbeeldingen/Companycrest.png");*/
-    /*background-attachment: fixed;*/
-    /*background-repeat: repeat;*/
-}
-p{
-    font-family: 'Parisienne', cursive;
-    text-align: justify;
-    font-size: 1.2rem;
-    line-height: 1.618rem;
-    color: #9a7f25;
-    padding: 0 1.5rem;
-}
-nav{
-    text-align: center;
-}
-nav a{
-    color: #9a7f25;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: underline;
-}
-nav a:hover{
-    color: #efead5;
-    text-decoration: none;
-    font-size: 2.25rem;
-    transition: 700ms;
-}
+/*.hoofdpagina img{*/
+/*    height: 50VH;*/
+/*}*/
 
-a{
-    color: #9a7f25;
-    text-decoration: underline;
-}
-a:hover{
-    color: #efead5;
-}
-ul{
-    border: solid 5px #9a7f25;
-    box-shadow: 0.5px 0.5px 8px #efead5;
-}
-li{
-    font-family: 'Cinzel Decorative', cursive;
-    list-style-type: none;
-}
+/*#hoofdpagina{*/
+/*    position: fixed;*/
+/*    display: block;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    z-index: -1;*/
+/*}*/
+
+
+
+
+/*ul{*/
+/*    border: solid 5px #9a7f25;*/
+/*    box-shadow: 0.5px 0.5px 8px #efead5;*/
+/*}*/
+/*li{*/
+/*    font-family: 'Cinzel Decorative', cursive;*/
+/*    list-style-type: none;*/
+/*}*/
 table{
     caption-side: bottom;
     border: solid 3px #987d25;
@@ -150,7 +221,8 @@ aside{
     line-height: 1.618rem;
     color: #efead5;
     text-align: right;
-    padding: 01.5rem 1.5rem;
+    padding: 1.5rem 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 /*nieuw in de les*/
@@ -162,8 +234,8 @@ aside{
 /*}*/
 
 *::selection {
-    color: #304354;
-    background-color: rgb(153, 126, 37);
+    color: #997e25;
+    background-color: rgb(239, 234, 213);
 }
 
 /*margin 0 auto, centreert het horizontaal
@@ -197,26 +269,65 @@ cursor:
 
 */
 /*Media breakpunten + print*/
-@media (max-width: 600px) {
-    html{
-        font-size: 13px
+/*@media (max-width: 600px) {*/
+/*    html{*/
+/*        font-size: 13px*/
+/*    }*/
+/*    .start{*/
+/*        font-family: 'Cinzel Decorative', cursive;*/
+/*        font-size: 1rem;*/
+/*        color: #9a7f25;*/
+/*        text-shadow: 4px 4px 8px rgba(239, 234, 213, 1);*/
+/*        position: absolute;*/
+/*        top: 50%;*/
+/*        left: 60%;*/
+/*        transform: translate(-50%, -50%);*/
+/*}*/
+/*@media (max-width: 800px) {*/
+/*    html{*/
+/*        font-size: 19px}*/
+/*}*/
+/*@media (min-width: 1100px) {*/
+/*}*/
+/*}*/
+
+
+@media (min-width: 400px) {
+    nav ul {
+        flex-direction: row;
     }
-    .start{
-        font-family: 'Cinzel Decorative', cursive;
-        font-size: 1rem;
-        color: #9a7f25;
-        text-shadow: 4px 4px 8px rgba(239, 234, 213, 1);
-        position: absolute;
-        top: 50%;
-        left: 60%;
-        transform: translate(-50%, -50%);
+
+    nav li {
+        flex: 1 1 auto;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    nav a span {
+        display: none;
+    }
+
+    .qa {
+        order: 1;
+    }
+
 }
-@media (max-width: 800px) {
-    html{
-        font-size: 19px}
+@media (min-width: 600px) {
+    nav li.spacer {
+        display: block;
+        flex: 2 1 auto;
+    }
 }
-@media (min-width: 1100px) {
-}
+@media (min-width: 800px) {
+    nav li.spacer {
+        display: none;
+    }
+
+    nav a span {
+        display: inline;
+    }
 }
 @media print {
     html{
@@ -226,14 +337,7 @@ cursor:
         display: none;
     }
 }
-footer {
-    font-size: .7rem;
-    text-align: right;
-    color: #9a7f25;
-    border-top: 1px solid #997e25;
-    padding-top: 0.5rem;
-    font-weight: 200;
-}
+
 
 .rank {
     cursor: grabbing;
@@ -241,19 +345,18 @@ footer {
     border-radius: .5rem;
     margin: 1rem;
     padding: 1rem;
-    padding-right: 7rem;
-    /*background-image: url("../assets/img1.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center right;*/
-    /*background-size: 6rem;*/
     box-shadow:
             0 -.4rem .8rem rgba(239, 234, 213, .2),
             0 .4rem .8rem rgba(239, 234, 213, .2);
     transition: transform .3s, background-color .3s .3s;
 }
+article:last-child{
+    margin-bottom: 2.5rem;
+}
 .rank:hover {
     background-color: #efead5;
 }
+
 .leiders {
     display: flex;
     align-items: center;
@@ -261,29 +364,29 @@ footer {
     border: 1px solid #997e25;
     border-radius: .5rem;
     margin: 1rem;
-    /*padding: 0.1rem;*/
-    padding-right: 7rem;
+    overflow: hidden;
     box-shadow:
             0 -.4rem .8rem rgba(239, 234, 213, .2),
             0 .4rem .8rem rgba(239, 234, 213, .2);
     transition: transform .3s, background-color .3s .3s;
 }
 .leiders img{
+    display: flex;
     margin-right: 2rem;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 }
 .leiders:hover {
     background-color: #efead5;}
 
-/* .hoofdpagina {
-tekst centreren (hoofdpagina logo centreren)
-display: flex;
-height: 100vh;
-justify-content: center;
-align-items: center;
-background-image: url("Afbeeldingen/Hoofdpagina.png");
-}*/
+/*.hoofdpagina {*/
+/*!*text: centreren;*!*/
+/*display: flex;*/
+/*height: 100vh;*/
+/*justify-content: center;*/
+/*align-items: center;*/
+/*background-image: url("Afbeeldingen/Hoofdpagina.png");*/
+/*}*/
 
 /* .hoofdpagina img {
 height: 50VH;
@@ -303,6 +406,9 @@ top: -54px;
 in de hover transform: translateU(54px); transition: 0.5s;
 ease-in laat je menu trager zakker en dan ineens sneller naar beneden gaan.
 
-om je navigatie
 
+kleurcontract aanpassen naar kleurschema van laptop !
+box rond namen leiders aanpassen, zodat de naam in de box blijft staan.
+
+focussen op klein scherm leggen.
  */
