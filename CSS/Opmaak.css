@@ -206,7 +206,7 @@ aside{
     box-shadow:
             0 -.4rem .8rem rgba(239, 234, 213, .2),
             0 .4rem .8rem rgba(239, 234, 213, .2);
-    transition: transform .3s, background-color .3s .3s;
+    transition: transform .3s, background-color .3s, color .3s;
 }
 article:last-child{
     margin-bottom: 2.5rem;
@@ -238,7 +238,12 @@ article:last-child{
     width: 150px;
 }
 .leiders:hover {
-    background-color: #efead5;}
+    /*background-color : #efead5;*/
+    background-image: linear-gradient(120deg, #efead5 55%, #987d25 100%);
+}
+.leiders:hover h3{
+    color: #304354;
+}
 .regels1{
     font-family: 'Parisienne', cursive;
     list-style-type: none;
