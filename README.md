@@ -6,12 +6,12 @@
 
 > :exclamation: Houd deze repo 100% up-to-date :exclamation:
 
-| Student         | Info                                                             |
-|:----------------|:-----------------------------------------------------------------|
-| Name            | Kristof Martens                                                  |
-| email           | [r0930159@student.thomasmore.be](mailto:r0930159@student.thomasmore.be)    |
-| Github Username | Ultraluminary                                                    |
-| Hosting         | [https://yourdomain.netlify.app](https://yourdomain.netlify.app) |
+| Student         | Info                                                                    |
+|:----------------|:------------------------------------------------------------------------|
+| Name            | Kristof Martens                                                         |
+| email           | [r0930159@student.thomasmore.be](mailto:r0930159@student.thomasmore.be) |
+| Github Username | Ultraluminary                                                           |
+| Hosting         | [https://luminary-agency.netlify.app](https://yourdomain.netlify.app)   |
 
 ## Installatie
 

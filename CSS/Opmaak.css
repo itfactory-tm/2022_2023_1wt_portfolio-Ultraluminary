@@ -233,6 +233,10 @@ aside{
 /*    * zorgt ervoor dat je een basis opmaak toepast op alles zonder een opmaak gedef. in een opmaak*/
 /*}*/
 
+.error{
+    position: center;
+}
+
 *::selection {
     color: #997e25;
     background-color: rgb(239, 234, 213);
@@ -358,6 +362,7 @@ cursor:
     cursor: grabbing;
     border: 1px solid #997e25;
     border-radius: .5rem;
+    overflow: hidden;
     margin: 1rem;
     padding: 1rem;
     box-shadow:
@@ -394,7 +399,18 @@ article:last-child{
 }
 .leiders:hover {
     background-color: #efead5;}
-
+.regels1{
+    font-family: 'Parisienne', cursive;
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.618rem;
+    color: #efead5;
+    padding: 0 1.5rem;
+}
+.regels2{
+    list-style-type: decimal;
+}
 /*.hoofdpagina {*/
 /*!*text: centreren;*!*/
 /*display: flex;*/
