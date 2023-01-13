@@ -18,6 +18,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    padding: 0;
 
 }
 nav li {
@@ -144,31 +145,7 @@ a:hover{
     background-image: url("../Afbeeldingen/Hoofdpagina.png");
     height: 50vh;
 }
-/*.hoofdpagina img{*/
-/*    height: 50VH;*/
-/*}*/
 
-/*#hoofdpagina{*/
-/*    position: fixed;*/
-/*    display: block;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    z-index: -1;*/
-/*}*/
-
-
-
-
-/*ul{*/
-/*    border: solid 5px #9a7f25;*/
-/*    box-shadow: 0.5px 0.5px 8px #efead5;*/
-/*}*/
-/*li{*/
-/*    font-family: 'Cinzel Decorative', cursive;*/
-/*    list-style-type: none;*/
-/*}*/
 table{
     caption-side: bottom;
     border: solid 3px #987d25;
@@ -192,22 +169,7 @@ th{
 col{
     width: 150px
 }
-/*img{*/
-/*    border-radius: 2rem;*/
-/*    border: solid 1px  black;*/
-/*    transition: 500ms;*/
-/*}*/
-/*img:hover{*/
-/*    border-radius: 50%;*/
-/*    transform: rotate(180deg);*/
-/*}*/
-/*figure{*/
-/*    border: solid 1px yellow;*/
-/*    padding: 1rem;*/
-/*    margin: 1rem;*/
-/*    text-align: center;*/
-/*    backdrop-filter: blur(5px);*/
-/*}*/
+
 .bolt{
     font-weight: bold;
     text-decoration: underline;
@@ -225,14 +187,6 @@ aside{
     padding-bottom: 2.5rem;
 }
 
-/*nieuw in de les*/
-/** {*/
-/*    border: solid 1px green;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    * zorgt ervoor dat je een basis opmaak toepast op alles zonder een opmaak gedef. in een opmaak*/
-/*}*/
-
 .error{
     position: center;
 }
@@ -242,59 +196,61 @@ aside{
     background-color: rgb(239, 234, 213);
 }
 
-/*margin 0 auto, centreert het horizontaal
-max-width 600px is standaard en past automatisch aan
-overflow auto is voor een kader met balkje om alle tekst te zien.
+.rank {
+    cursor: grabbing;
+    border: 1px solid #997e25;
+    border-radius: .5rem;
+    overflow: hidden;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow:
+            0 -.4rem .8rem rgba(239, 234, 213, .2),
+            0 .4rem .8rem rgba(239, 234, 213, .2);
+    transition: transform .3s, background-color .3s .3s;
+}
+article:last-child{
+    margin-bottom: 2.5rem;
+}
+.rank:hover {
+    background-color: #efead5;
+}
+.rank:hover p {
+    color: #304455;
+}
 
-
-display block of inline
-
-nav a
-display block
-
-vnaf 600px display inline
-
-print display none
-
-
-
-
-
-img -> width: 100%
-    -> height: auto
-
-object-fit cover
-
-box shadow kan -.4px negatief om rondom schaduw te maken.
-
-cursor:
-
-
-
-*/
-/*Media breakpunten + print*/
-/*@media (max-width: 600px) {*/
-/*    html{*/
-/*        font-size: 13px*/
-/*    }*/
-/*    .start{*/
-/*        font-family: 'Cinzel Decorative', cursive;*/
-/*        font-size: 1rem;*/
-/*        color: #9a7f25;*/
-/*        text-shadow: 4px 4px 8px rgba(239, 234, 213, 1);*/
-/*        position: absolute;*/
-/*        top: 50%;*/
-/*        left: 60%;*/
-/*        transform: translate(-50%, -50%);*/
-/*}*/
-/*@media (max-width: 800px) {*/
-/*    html{*/
-/*        font-size: 19px}*/
-/*}*/
-/*@media (min-width: 1100px) {*/
-/*}*/
-/*}*/
-
+.leiders {
+    display: flex;
+    align-items: center;
+    cursor: grabbing;
+    border: 1px solid #997e25;
+    border-radius: .5rem;
+    margin: 1rem;
+    overflow: hidden;
+    box-shadow:
+            0 -.4rem .8rem rgba(239, 234, 213, .2),
+            0 .4rem .8rem rgba(239, 234, 213, .2);
+    transition: transform .3s, background-color .3s .3s;
+}
+.leiders img{
+    display: flex;
+    margin-right: 2rem;
+    height: 150px;
+    width: 150px;
+}
+.leiders:hover {
+    background-color: #efead5;}
+.regels1{
+    font-family: 'Parisienne', cursive;
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.618rem;
+    color: #efead5;
+    padding: 0 1.5rem;
+}
+.regels2{
+    list-style-type: decimal;
+}
 
 @media (min-width: 400px) {
     h3{
@@ -356,91 +312,3 @@ cursor:
         display: none;
     }
 }
-
-
-.rank {
-    cursor: grabbing;
-    border: 1px solid #997e25;
-    border-radius: .5rem;
-    overflow: hidden;
-    margin: 1rem;
-    padding: 1rem;
-    box-shadow:
-            0 -.4rem .8rem rgba(239, 234, 213, .2),
-            0 .4rem .8rem rgba(239, 234, 213, .2);
-    transition: transform .3s, background-color .3s .3s;
-}
-article:last-child{
-    margin-bottom: 2.5rem;
-}
-.rank:hover {
-    background-color: #efead5;
-    color: #000;
-}
-
-.leiders {
-    display: flex;
-    align-items: center;
-    cursor: grabbing;
-    border: 1px solid #997e25;
-    border-radius: .5rem;
-    margin: 1rem;
-    overflow: hidden;
-    box-shadow:
-            0 -.4rem .8rem rgba(239, 234, 213, .2),
-            0 .4rem .8rem rgba(239, 234, 213, .2);
-    transition: transform .3s, background-color .3s .3s;
-}
-.leiders img{
-    display: flex;
-    margin-right: 2rem;
-    height: 150px;
-    width: 150px;
-}
-.leiders:hover {
-    background-color: #efead5;}
-.regels1{
-    font-family: 'Parisienne', cursive;
-    list-style-type: none;
-    text-align: justify;
-    font-size: 1.2rem;
-    line-height: 1.618rem;
-    color: #efead5;
-    padding: 0 1.5rem;
-}
-.regels2{
-    list-style-type: decimal;
-}
-/*.hoofdpagina {*/
-/*!*text: centreren;*!*/
-/*display: flex;*/
-/*height: 100vh;*/
-/*justify-content: center;*/
-/*align-items: center;*/
-/*background-image: url("Afbeeldingen/Hoofdpagina.png");*/
-/*}*/
-
-/* .hoofdpagina img {
-height: 50VH;
-}
-navigatiebalk zie flexbox examples
-nax ul li {
-border -bottom 1px solid
-flex 1 1 100%}
-nav ul li:hover {
-blabla
-}
-
-active class laat zien welke pagina momenteel actief is (mss te doen in een aparte kleur.)
-om een navigatie laten te verschuiven naar boven, zodat hij niet in je beeld constant is.
-top: -54px;
-
-in de hover transform: translateU(54px); transition: 0.5s;
-ease-in laat je menu trager zakker en dan ineens sneller naar beneden gaan.
-
-
-kleurcontract aanpassen naar kleurschema van laptop !
-box rond namen leiders aanpassen, zodat de naam in de box blijft staan.
-
-focussen op klein scherm leggen.
- */
