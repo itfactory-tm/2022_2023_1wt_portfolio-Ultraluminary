@@ -11,7 +11,7 @@ nav {
     background-color: #997e25;
     text-align: center;
     position: sticky;
-    top: 0px;
+    top: 0;
     box-shadow: 0.5px 0.5px 8px #efead5;
 }
 nav ul {
@@ -355,6 +355,7 @@ article:last-child{
 }
 .rank:hover {
     background-color: #efead5;
+    color: #000;
 }
 
 .leiders {
