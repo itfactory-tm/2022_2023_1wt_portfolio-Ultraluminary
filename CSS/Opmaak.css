@@ -31,7 +31,6 @@ nav a {
     flex: 1 1 auto;
     line-height: 2;
     text-decoration: underline;
-    /*color: #997e25;*/
     font-weight: bold;
     background-color: #997e25;
     color: #efead5;
@@ -107,10 +106,11 @@ footer {
 }
 a{
     color: #efead5;
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:hover{
     font-weight: bold;
+    text-decoration: none;
     color: #efead5;
 }
 
@@ -293,8 +293,14 @@ cursor:
 
 
 @media (min-width: 400px) {
+    h3{
+        font-size: calc(0.8rem + .6vw);
+    }
+    nav {
+        position: static;
+    }
     nav ul {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     nav li {
@@ -315,6 +321,15 @@ cursor:
 
 }
 @media (min-width: 600px) {
+    h3{
+        font-size: calc(1.3rem + .6vw);
+    }
+    nav {
+        position: sticky;
+    }
+    nav ul {
+        flex-direction: row;
+    }
     nav li.spacer {
         display: block;
         flex: 2 1 auto;
