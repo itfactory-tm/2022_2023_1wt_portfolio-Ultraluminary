@@ -183,9 +183,11 @@ col{
 }
 .center{
     text-align: center;
-    color: red;
-    font-weight: bold;
 }
+.center2{
+    text-align: center;
+    color: red;
+    font-weight: bold;}
 aside{
     font-family: 'Parisienne', cursive;
     font-size: 1.2rem;
