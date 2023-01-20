@@ -71,7 +71,14 @@ h3{
     font-family: 'Cinzel Decorative', cursive;
     color: #9a7f25;
 }
-
+h4{
+    font-family: 'Parisienne', cursive;
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 1.618rem;
+    color: #efead5;
+    padding: 0 1.5rem;
+}
 p{
     font-family: 'Parisienne', cursive;
     text-align: justify;
