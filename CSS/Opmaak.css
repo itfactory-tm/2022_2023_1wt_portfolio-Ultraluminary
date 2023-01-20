@@ -183,6 +183,8 @@ col{
 }
 .center{
     text-align: center;
+    color: RED;
+    font-weight: bold;
 }
 aside{
     font-family: 'Parisienne', cursive;
